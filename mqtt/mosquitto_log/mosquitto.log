@@ -1,0 +1,20 @@
+1721644005: mosquitto version 2.0.18 starting
+1721644005: Config loaded from /mosquitto/config/mosquitto.conf.
+1721644005: Opening ipv4 listen socket on port 11884.
+1721644005: mosquitto version 2.0.18 running
+1721644005: New connection from 172.18.0.1:42696 on port 11884.
+1721644005: New client connected from 172.18.0.1:42696 as auto-B1EF4FBC-7F49-CC83-23F4-D1BA9EFD97EA (p2, c1, k60).
+1721644006: New connection from 172.18.0.3:43187 on port 11884.
+1721644006: New client connected from 172.18.0.3:43187 as auto-CF388D22-0C53-5EBA-A1FC-6B70666A8DA7 (p2, c1, k5).
+1721644422: Client auto-B1EF4FBC-7F49-CC83-23F4-D1BA9EFD97EA closed its connection.
+1721644616: New connection from 172.18.0.1:41916 on port 11884.
+1721644616: New client connected from 172.18.0.1:41916 as auto-8FA76E66-FDEC-0B4B-6C45-9ABF389DE4AF (p2, c1, k60).
+1721644691: New connection from 172.18.0.1:37630 on port 11884.
+1721644691: New client connected from 172.18.0.1:37630 as ESP8266Client (p2, c1, k15).
+1721644824: Client auto-CF388D22-0C53-5EBA-A1FC-6B70666A8DA7 closed its connection.
+1721644824: mosquitto version 2.0.18 terminating
+1721644824: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1721644824: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+1721644824: Warning: File /mosquitto/data//mosquitto.db.new owner is not mosquitto. Future versions will refuse to load this file.To fix this, use `chown mosquitto /mosquitto/data//mosquitto.db.new`.
+1721644824: Warning: File /mosquitto/data//mosquitto.db.new group is not mosquitto. Future versions will refuse to load this file.

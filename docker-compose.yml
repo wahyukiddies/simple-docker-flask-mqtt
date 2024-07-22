@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  web_flask:
+    build: ./web
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mqtt_mosquitto
+
+  mqtt_mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    ports:
+      - "11884:11884"
+    volumes:
+      - ./mqtt/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./mqtt/mosquitto_data:/mosquitto/data
+      - ./mqtt/mosquitto_log:/mosquitto/log
+    restart: always
+    command: mosquitto -c /mosquitto/config/mosquitto.conf
+
+volumes:
+  mosquitto_data:
+  mosquitto_log:
