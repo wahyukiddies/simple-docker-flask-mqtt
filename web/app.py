@@ -4,7 +4,7 @@ from flask_mqtt import Mqtt
 app = Flask(__name__)
 
 # MQTT Configuration
-app.config['MQTT_BROKER_URL'] = 'mosquitto'
+app.config['MQTT_BROKER_URL'] = 'mqtt_mosquitto'
 app.config['MQTT_BROKER_PORT'] = 11884
 app.config['MQTT_USERNAME'] = ''
 app.config['MQTT_PASSWORD'] = ''

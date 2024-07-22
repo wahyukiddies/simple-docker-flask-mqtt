@@ -3,20 +3,20 @@ version: '3.9'
 services:
   web_flask:
     build: ./web
+    container_name: flask_app
     ports:
       - "5000:5000"
     depends_on:
       - mqtt_mosquitto
 
   mqtt_mosquitto:
-    image: eclipse-mosquitto:latest
+    build: ./mqtt
     container_name: mosquitto
     ports:
       - "11884:11884"
     volumes:
-      - ./mqtt/mosquitto.conf:/mosquitto/config/mosquitto.conf
-      - ./mqtt/mosquitto_data:/mosquitto/data
-      - ./mqtt/mosquitto_log:/mosquitto/log
+      - mosquitto_data:/mosquitto/data
+      - mosquitto_log:/mosquitto/log
     restart: always
     command: mosquitto -c /mosquitto/config/mosquitto.conf
 

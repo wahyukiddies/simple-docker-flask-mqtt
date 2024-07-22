@@ -1,3 +1,4 @@
 #!/bin/sh
-# Command to run the docker-compose file.
+
+# Build and run the containers
 docker-compose up -d --build
